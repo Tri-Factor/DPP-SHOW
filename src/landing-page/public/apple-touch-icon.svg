@@ -1,0 +1,42 @@
+<svg width="180" height="180" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <defs>
+    <radialGradient id="appleBg" cx="50%" cy="30%" r="80%">
+      <stop offset="0%" style="stop-color:#8ED1A6"/>
+      <stop offset="100%" style="stop-color:#74C69D"/>
+    </radialGradient>
+  </defs>
+  
+  <circle cx="90" cy="90" r="90" fill="url(#appleBg)"/>
+  
+  <!-- TreePine Icon using exact Lucide paths -->
+  <g transform="translate(30, 30) scale(2.2)">
+    <path d="m17 14 3 3.3a1 1 0 0 1-.7 1.7H4.4a1 1 0 0 1-.7-1.7L7 14h-.3a1 1 0 0 1-.7-1.7L9 9h-.2A1 1 0 0 1 8 7.3L12 2l4 5.3a1 1 0 0 1-.8 1.7H15l3 3.3a1 1 0 0 1-.7 1.7H17Z" 
+          fill="none" 
+          stroke="#ffffff" 
+          stroke-width="1.5" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+    <path d="M12 22v-3" 
+          fill="none" 
+          stroke="#ffffff" 
+          stroke-width="1.5" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Shield Icon using exact Lucide paths -->
+  <g transform="translate(130, 40) scale(1.4)">
+    <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" 
+          fill="none" 
+          stroke="#E96E8C" 
+          stroke-width="1.5" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Decorative elements -->
+  <circle cx="40" cy="130" r="4" fill="#ffffff" opacity="0.6"/>
+  <circle cx="140" cy="130" r="3" fill="#ffffff" opacity="0.4"/>
+  <circle cx="50" cy="50" r="2" fill="#ffffff" opacity="0.5"/>
+</svg>

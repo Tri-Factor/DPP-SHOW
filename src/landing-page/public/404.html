@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looma - DPP Têxtil</title>
+    <script>
+        // Redirecionamento para a página principal
+        const currentPath = window.location.pathname;
+        
+        // Se estiver na raiz ou em qualquer caminho que não seja /DPP-SHOW/
+        if (currentPath === '/' || !currentPath.startsWith('/DPP-SHOW/')) {
+            window.location.replace('/DPP-SHOW/');
+        }
+    </script>
+</head>
+<body>
+    <div style="font-family: Arial, sans-serif; text-align: center; padding: 50px;">
+        <h1>Redirecionando...</h1>
+        <p>Você está sendo redirecionado para <a href="/DPP-SHOW/">Looma - DPP Têxtil</a></p>
+        
+        <script>
+            // Fallback caso o redirecionamento não funcione
+            setTimeout(() => {
+                window.location.href = '/DPP-SHOW/';
+            }, 2000);
+        </script>
+    </div>
+</body>
+</html>

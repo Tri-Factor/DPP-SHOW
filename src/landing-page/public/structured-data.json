@@ -1,0 +1,99 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://tri-factor.github.io/DPP-SHOW/#organization",
+      "name": "Equipe Baobá - Looma",
+      "description": "Especialistas em blockchain, sustentabilidade e transformação digital para a indústria têxtil",
+      "url": "https://tri-factor.github.io/DPP-SHOW/",
+      "foundingDate": "2024",
+      "founders": [
+        {
+          "@type": "Person",
+          "name": "Erik Batista da Silva",
+          "jobTitle": "Founder",
+          "sameAs": "https://www.linkedin.com/in/erik-batista-da-silva-455612215/"
+        },
+        {
+          "@type": "Person",
+          "name": "Rafaella Cavalcante",
+          "jobTitle": "Founder",
+          "sameAs": "https://www.linkedin.com/in/rafaella-bianca-cavalcante/"
+        },
+        {
+          "@type": "Person",
+          "name": "Paula Kim",
+          "jobTitle": "Founder",
+          "sameAs": "https://www.linkedin.com/in/paula-kweyeun-kim-b93aab36/"
+        },
+        {
+          "@type": "Person",
+          "name": "Yan Mendonça Coutinho",
+          "jobTitle": "Founder",
+          "sameAs": "https://www.linkedin.com/in/yan-m-coutinho/"
+        }
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "erikbatista1222@gmail.com",
+        "contactType": "customer service"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://tri-factor.github.io/DPP-SHOW/#website",
+      "url": "https://tri-factor.github.io/DPP-SHOW/",
+      "name": "Looma - Solução DPP Blockchain",
+      "description": "Revolucione a transparência da sua marca têxtil com nossa solução DPP blockchain",
+      "publisher": {
+        "@id": "https://tri-factor.github.io/DPP-SHOW/#organization"
+      },
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://tri-factor.github.io/DPP-SHOW/#software",
+      "name": "Looma DPP",
+      "description": "Solução blockchain para Digital Product Passport na indústria têxtil, oferecendo transparência e rastreabilidade completa da cadeia produtiva",
+      "url": "https://tri-factor.github.io/DPP-SHOW/",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web Browser",
+      "softwareVersion": "1.0",
+      "releaseNotes": "Primeira versão da solução Looma DPP para transparência têxtil",
+      "creator": {
+        "@id": "https://tri-factor.github.io/DPP-SHOW/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "category": "Enterprise Software",
+        "description": "Solução empresarial para implementação de Digital Product Passport"
+      },
+      "featureList": [
+        "Blockchain Imutável",
+        "Transparência Total",
+        "Validação Automática",
+        "Rastreabilidade Completa",
+        "Integração com Cadeia de Suprimentos"
+      ],
+      "screenshot": "https://tri-factor.github.io/DPP-SHOW/og-image.jpg"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://tri-factor.github.io/DPP-SHOW/#webpage",
+      "url": "https://tri-factor.github.io/DPP-SHOW/",
+      "name": "Looma - Solução DPP Blockchain para Indústria Têxtil",
+      "description": "Revolucione a transparência da sua marca têxtil com nossa solução DPP blockchain. Digital Product Passport seguro, rastreável e sustentável.",
+      "isPartOf": {
+        "@id": "https://tri-factor.github.io/DPP-SHOW/#website"
+      },
+      "about": {
+        "@id": "https://tri-factor.github.io/DPP-SHOW/#software"
+      },
+      "inLanguage": "pt-BR",
+      "mainEntity": {
+        "@id": "https://tri-factor.github.io/DPP-SHOW/#software"
+      }
+    }
+  ]
+}

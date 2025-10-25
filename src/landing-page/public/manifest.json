@@ -1,0 +1,47 @@
+{
+  "name": "Looma - Solução DPP Blockchain para Indústria Têxtil",
+  "short_name": "Looma DPP",
+  "description": "Revolucione a transparência da sua marca têxtil com nossa solução DPP blockchain",
+  "start_url": "/DPP-SHOW/",
+  "display": "standalone",
+  "background_color": "#1a1a1a",
+  "theme_color": "#74C69D",
+  "orientation": "portrait-primary",
+  "categories": ["business", "productivity", "technology"],
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/DPP-SHOW/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/DPP-SHOW/apple-touch-icon.svg",
+      "sizes": "180x180",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/DPP-SHOW/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/DPP-SHOW/screenshot-desktop.jpg",
+      "sizes": "1200x800",
+      "type": "image/jpeg",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/DPP-SHOW/screenshot-mobile.jpg",
+      "sizes": "400x800",
+      "type": "image/jpeg",
+      "form_factor": "narrow"
+    }
+  ]
+}

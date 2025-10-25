@@ -1,0 +1,39 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle with gradient -->
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#8ED1A6"/>
+      <stop offset="100%" style="stop-color:#74C69D"/>
+    </radialGradient>
+  </defs>
+  
+  <circle cx="16" cy="16" r="16" fill="url(#bgGrad)"/>
+  
+  <!-- TreePine Icon - using exact Lucide paths scaled for 32x32 -->
+  <g transform="translate(5, 4) scale(0.9)">
+    <!-- TreePine exact path from Lucide -->
+    <path d="m17 14 3 3.3a1 1 0 0 1-.7 1.7H4.4a1 1 0 0 1-.7-1.7L7 14h-.3a1 1 0 0 1-.7-1.7L9 9h-.2A1 1 0 0 1 8 7.3L12 2l4 5.3a1 1 0 0 1-.8 1.7H15l3 3.3a1 1 0 0 1-.7 1.7H17Z" 
+          fill="none" 
+          stroke="#ffffff" 
+          stroke-width="1.5" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+    <path d="M12 22v-3" 
+          fill="none" 
+          stroke="#ffffff" 
+          stroke-width="1.5" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Shield Icon - using exact Lucide path scaled and positioned -->
+  <g transform="translate(20, 7) scale(0.6)">
+    <!-- Shield exact path from Lucide -->
+    <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" 
+          fill="none" 
+          stroke="#E96E8C" 
+          stroke-width="1.8" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+  </g>
+</svg>
