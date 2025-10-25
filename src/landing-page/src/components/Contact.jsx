@@ -9,6 +9,11 @@ const Contact = () => {
       role: "Founder"
     },
     {
+      name: "Joy Pires Franco",
+      linkedin: "https://www.linkedin.com/in/joy-pires-franco-0b973ba1/",
+      role: "Founder"
+    },
+    {
       name: "Rafaella Cavalcante",
       linkedin: "https://www.linkedin.com/in/rafaella-bianca-cavalcante/",
       role: "Founder"
@@ -22,7 +27,8 @@ const Contact = () => {
       name: "Yan Mendonça Coutinho",
       linkedin: "https://www.linkedin.com/in/yan-m-coutinho/",
       role: "Founder"
-    }
+    },
+
   ]
 
   // Email configuration
