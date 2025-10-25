@@ -67,10 +67,10 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.6 }}
             >
-              Uma solução revolucionária de <strong className="text-branco-algodao">Passaporte Digital de Produto (DPP)</strong> que 
+              Uma solução revolucionária de <strong className="text-branco-algodao">Digital Product Passport (DPP)</strong> que 
               conecta o <strong className="text-verde-sustentavel">mundo físico ao blockchain</strong>, realizando 
               <strong className="text-rosa-etico"> medições reais</strong> em cada etapa da cadeia produtiva têxtil 
-              para garantir <strong className="text-branco-algodao">transparência autêntica</strong>.
+              para garantir <strong className="text-branco-algodao">transparência e rastreabilidade</strong>.
             </motion.p>
 
             {/* CTA Buttons */}
@@ -113,7 +113,7 @@ const Hero = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <TreePine className="w-4 h-4 md:w-5 md:h-5 text-verde-sustentavel" />
-                <span className="text-xs md:text-sm">Sustentabilidade Verificada</span>
+                <span className="text-xs md:text-sm">Conexão entre real e digital</span>
               </div>
             </motion.div>
           </motion.div>

@@ -7,28 +7,28 @@ const HowItWorks = () => {
       icon: Wheat,
       title: "Colheita",
       description: "Registro da origem das fibras naturais",
-      details: "Localização, métodos de cultivo, certificações orgânicas, condições de trabalho",
+      details: "Localização, métodos de cultivo, e outras informações que comprovam a sustentabilidade são registradas e analisadas pela solução",
       color: "from-green-400 to-green-600"
     },
     {
       icon: Zap,
       title: "Fiação",
       description: "Transformação das fibras em fios",
-      details: "Processos químicos utilizados, consumo energético, tratamento de efluentes",
+      details: "Desde o transporte até a fiação, cada etapa é monitorada para garantir que a cadeia produtiva seja mantida",
       color: "from-blue-400 to-blue-600"
     },
     {
       icon: Shirt,
       title: "Confecção",
       description: "Produção das peças de vestuário",
-      details: "Condições de trabalho, salários justos, técnicas de produção sustentáveis",
+      details: "São registrados quem produziu, onde e como, assim é possível tornar auditáveis a cadeia produtiva de cada SKU fabricado",
       color: "from-purple-400 to-purple-600"
     },
     {
       icon: ShoppingBag,
       title: "Venda",
       description: "Disponibilização para o consumidor final",
-      details: "Embalagens sustentáveis, logística verde, informações de transparência",
+      details: "O transporte de loja em loja, a venda final, tudo é registrado em blockchain para garantir a rastreabilidade completa do produto",
       color: "from-rosa-etico to-rosa-terra"
     }
   ]
@@ -168,74 +168,6 @@ const HowItWorks = () => {
           </div>
         </div>
 
-        {/* Features Grid */}
-        <motion.div
-          className="bg-gradient-to-br from-preto-bao to-cinza-grafite rounded-3xl p-8 md:p-12"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <div className="text-center mb-12">
-            <h3 className="text-2xl md:text-3xl font-display font-bold text-branco-algodao mb-4">
-              Tecnologia Que Garante Integridade
-            </h3>
-            <p className="text-gray-300 max-w-2xl mx-auto">
-              Cada dados registrado é verificado, validado e armazenado de forma permanente, 
-              criando um histórico completo e imutável de toda a cadeia produtiva.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <motion.div
-              className="text-center bg-white/5 rounded-xl p-6 backdrop-blur-sm"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1, duration: 0.6 }}
-              viewport={{ once: true }}
-            >
-              <CheckCircle className="w-12 h-12 text-verde-sustentavel mx-auto mb-4" />
-              <h4 className="text-lg font-semibold text-branco-algodao mb-2">
-                Dados Imutáveis
-              </h4>
-              <p className="text-gray-300 text-sm">
-                Informações registradas no blockchain não podem ser alteradas ou falsificadas
-              </p>
-            </motion.div>
-
-            <motion.div
-              className="text-center bg-white/5 rounded-xl p-6 backdrop-blur-sm"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2, duration: 0.6 }}
-              viewport={{ once: true }}
-            >
-              <CheckCircle className="w-12 h-12 text-rosa-etico mx-auto mb-4" />
-              <h4 className="text-lg font-semibold text-branco-algodao mb-2">
-                Acesso Público
-              </h4>
-              <p className="text-gray-300 text-sm">
-                Qualquer pessoa pode verificar a autenticidade e origem dos produtos
-              </p>
-            </motion.div>
-
-            <motion.div
-              className="text-center bg-white/5 rounded-xl p-6 backdrop-blur-sm"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3, duration: 0.6 }}
-              viewport={{ once: true }}
-            >
-              <CheckCircle className="w-12 h-12 text-verde-sustentavel mx-auto mb-4" />
-              <h4 className="text-lg font-semibold text-branco-algodao mb-2">
-                Validação Automática
-              </h4>
-              <p className="text-gray-300 text-sm">
-                Critérios de sustentabilidade verificados automaticamente sem intervenção humana
-              </p>
-            </motion.div>
-          </div>
-        </motion.div>
       </div>
     </section>
   )

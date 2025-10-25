@@ -54,34 +54,6 @@ const Footer = () => {
             </div>
           </motion.div>
 
-          {/* Solutions Column */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1, duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <h3 className="text-lg font-semibold text-branco-algodao mb-6">Soluções</h3>
-            <ul className="space-y-3">
-              {[
-                "Rastreabilidade Blockchain",
-                "Selo de Transparência",
-                "Validação Automática",
-                "Auditoria Digital",
-                "Relatórios de Sustentabilidade"
-              ].map((item, index) => (
-                <motion.li
-                  key={index}
-                  className="text-gray-300 hover:text-verde-sustentavel transition-colors cursor-pointer"
-                  whileHover={{ x: 5 }}
-                  transition={{ duration: 0.2 }}
-                >
-                  {item}
-                </motion.li>
-              ))}
-            </ul>
-          </motion.div>
-
           {/* Contact Column */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}

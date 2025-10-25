@@ -6,52 +6,81 @@ const Contact = () => {
     {
       name: "Erik Batista da Silva",
       linkedin: "https://www.linkedin.com/in/erik-batista-da-silva-455612215/",
-      role: "Tech Lead"
+      role: "Founder"
     },
     {
       name: "Rafaella Cavalcante",
       linkedin: "https://www.linkedin.com/in/rafaella-bianca-cavalcante/",
-      role: "Business Strategy"
+      role: "Founder"
     },
     {
       name: "Paula Kim",
       linkedin: "https://www.linkedin.com/in/paula-kweyeun-kim-b93aab36/",
-      role: "Product Manager"
+      role: "Founder"
     },
     {
       name: "Yan Mendonça Coutinho",
       linkedin: "https://www.linkedin.com/in/yan-m-coutinho/",
-      role: "Blockchain Developer"
+      role: "Founder"
     }
   ]
 
+  // Email configuration
+  const sendEmail = (subject, body) => {
+    const mailtoLink = `mailto:erikbatista1222@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+    window.open(mailtoLink, '_blank')
+  }
+
+  // Calendar link
+  const openCalendar = () => {
+    window.open('https://calendar.app.google/HEhg7qgMv5Fas3Qu6', '_blank')
+  }
+
+  // Contact handlers
+  const handleEmailContact = () => {
+    const subject = "Interesse na Solução Looma DPP"
+    const body = `Olá equipe Baobá,
+
+Gostaria de saber mais sobre a solução Looma DPP e como ela pode beneficiar nossa empresa.
+
+Informações da empresa:
+- Nome da empresa: 
+- Setor: 
+- Tamanho da operação: 
+- Principal desafio de transparência: 
+
+Aguardo retorno para conversarmos.
+
+Atenciosamente,`
+    sendEmail(subject, body)
+  }
+
+  const handleScheduleMeeting = () => {
+    openCalendar()
+  }
+
   const contactOptions = [
     {
-      icon: MessageCircle,
-      title: "Conversa Estratégica",
-      description: "Agende uma conversa com nossa equipe para entender como o Looma pode transformar sua marca",
-      action: "Falar no LinkedIn",
-      color: "from-verde-sustentavel to-verde-sustentavel/80"
-    },
-    {
       icon: Mail,
-      title: "Demonstração Técnica",
-      description: "Veja na prática como funciona nossa solução DPP blockchain e os benefícios para sua cadeia produtiva",
-      action: "Solicitar Demo",
-      color: "from-rosa-etico to-rosa-terra"
+      title: "E-mail",
+      description: "Entre em contato conosco pelo e-mail para mais informações.",
+      action: "Enviar E-mail",
+      color: "from-rosa-etico to-rosa-terra",
+      handler: handleEmailContact
     },
     {
       icon: Calendar,
-      title: "Consultoria Personalizada",
-      description: "Análise específica do seu caso e roadmap de implementação do Looma em sua empresa",
-      action: "Agendar Consultoria",
-      color: "from-preto-looma to-cinza-grafite"
+      title: "Agendar reunião",
+      description: "Agende uma reunião com nossa equipe para entender melhor o produto e se suas necessidades são atendidas.",
+      action: "Agendar Reunião",
+      color: "from-preto-looma to-cinza-grafite",
+      handler: handleScheduleMeeting
     }
   ]
 
   return (
-    <section className="py-20 bg-branco-algodao">
-      <div className="w-full max-w-none px-4 md:px-8 lg:px-16 xl:px-24">`
+    <section className="pt-20 pb-0 bg-rosa-claro">
+      <div className="w-full max-w-none px-4 md:px-8 lg:px-16 xl:px-24">
         {/* Header */}
         <motion.div
           className="text-center mb-16"
@@ -61,7 +90,7 @@ const Contact = () => {
           viewport={{ once: true }}
         >
           <motion.div
-            className="inline-flex items-center space-x-2 bg-verde-sustentavel/10 text-verde-sustentavel px-4 py-2 rounded-full text-sm font-medium mb-4"
+            className="inline-flex items-center space-x-2 bg-verde-sustentavel/12 text-verde-sustentavel px-5 py-2.5 rounded-full text-sm font-medium mb-4 border border-verde-sustentavel/15"
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2, duration: 0.6 }}
@@ -71,12 +100,12 @@ const Contact = () => {
             <span>Fale Conosco</span>
           </motion.div>
           
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-preto-bao mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-gray-900 mb-6">
             Pronto para Transformar
             <br />sua <span className="text-verde-sustentavel">Cadeia Produtiva</span>?
           </h2>
           
-          <p className="text-base md:text-lg text-gray-700 max-w-3xl mx-auto">
+          <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Entre em contato com nossa equipe especializada e descubra como o Looma 
             pode fortalecer sua marca e conquistar a confiança dos consumidores.
           </p>
@@ -87,7 +116,7 @@ const Contact = () => {
           {contactOptions.map((option, index) => (
             <motion.div
               key={index}
-              className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 overflow-hidden relative"
+              className="group bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 overflow-hidden relative border border-white/60"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1, duration: 0.6 }}
@@ -107,7 +136,7 @@ const Contact = () => {
               </motion.div>
 
               {/* Content */}
-              <h3 className="text-xl font-bold text-preto-bao mb-4 relative z-10">
+              <h3 className="text-xl font-bold text-gray-900 mb-4 relative z-10">
                 {option.title}
               </h3>
               
@@ -117,6 +146,7 @@ const Contact = () => {
 
               {/* CTA Button */}
               <motion.button
+                onClick={option.handler}
                 className={`w-full bg-gradient-to-r ${option.color} text-white font-semibold py-3 px-6 rounded-xl hover:shadow-lg transition-all duration-300 relative z-10`}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
@@ -137,7 +167,7 @@ const Contact = () => {
 
         {/* Team Section */}
         <motion.div
-          className="bg-gradient-to-r from-preto-bao to-cinza-grafite rounded-3xl p-8 md:p-12"
+          className="bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900 rounded-3xl p-8 md:p-12 shadow-xl"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -146,12 +176,12 @@ const Contact = () => {
           <div className="text-center mb-12">
             <div className="flex items-center justify-center space-x-3 mb-6">
               <TreePine className="w-8 h-8 text-verde-sustentavel" />
-              <h3 className="text-2xl md:text-3xl font-display font-bold text-branco-algodao">
-                Equipe Baobá
+              <h3 className="text-2xl md:text-3xl font-display font-bold text-white">
+                Equipe Looma
               </h3>
             </div>
-            <p className="text-gray-300 max-w-2xl mx-auto">
-              Especialistas em blockchain, sustentabilidade e transformação digital 
+            <p className="text-gray-300 max-w-2xl mx-auto leading-relaxed">
+              Especialistas em blockchain, moda, sustentabilidade e transformação digital
               prontos para revolucionar sua cadeia produtiva.
             </p>
           </div>
@@ -163,7 +193,7 @@ const Contact = () => {
                 href={member.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group bg-white/10 rounded-xl p-6 backdrop-blur-sm hover:bg-white/20 transition-all duration-300 block"
+                className="group bg-white/10 rounded-xl p-6 backdrop-blur-sm hover:bg-white/20 transition-all duration-300 block border border-white/10"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1, duration: 0.6 }}
@@ -171,14 +201,14 @@ const Contact = () => {
                 whileHover={{ y: -5 }}
               >
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-br from-rosa-etico to-verde-sustentavel rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 bg-gradient-to-br from-verde-sustentavel to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
                     <Users className="w-8 h-8 text-white" />
                   </div>
-                  <h4 className="text-branco-algodao font-semibold mb-1 group-hover:text-verde-sustentavel transition-colors">
+                  <h4 className="text-white font-bold mb-1 group-hover:text-verde-sustentavel transition-colors">
                     {member.name}
                   </h4>
-                  <p className="text-gray-400 text-sm mb-3">{member.role}</p>
-                  <div className="flex items-center justify-center space-x-1 text-gray-400 group-hover:text-rosa-etico transition-colors">
+                  <p className="text-gray-300 text-sm mb-3">{member.role}</p>
+                  <div className="flex items-center justify-center space-x-1 text-gray-400 group-hover:text-verde-sustentavel transition-colors">
                     <ExternalLink className="w-4 h-4" />
                     <span className="text-xs">LinkedIn</span>
                   </div>
@@ -197,26 +227,12 @@ const Contact = () => {
           viewport={{ once: true }}
         >
           <motion.div
-            className="inline-flex flex-col sm:flex-row gap-4"
+            className="inline-flex flex-col sm:flex-row gap-1"
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.3, duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <motion.button
-              className="bg-rosa-etico hover:bg-rosa-terra text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Comece sua transformação hoje
-            </motion.button>
-            <motion.button
-              className="border-2 border-verde-sustentavel text-verde-sustentavel hover:bg-verde-sustentavel hover:text-white font-semibold px-8 py-4 rounded-full transition-all duration-300"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Saiba mais sobre a tecnologia
-            </motion.button>
           </motion.div>
         </motion.div>
       </div>
