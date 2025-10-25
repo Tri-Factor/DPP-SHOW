@@ -79,7 +79,7 @@ Atenciosamente,`
   ]
 
   return (
-    <section className="pt-20 pb-0 bg-rosa-claro">
+    <section id="contact" className="pt-20 pb-0 bg-rosa-claro">
       <div className="w-full max-w-none px-4 md:px-8 lg:px-16 xl:px-24">
         {/* Header */}
         <motion.div

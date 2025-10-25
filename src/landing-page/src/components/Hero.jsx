@@ -2,6 +2,25 @@ import { motion } from 'framer-motion'
 import { TreePine, Shield, Leaf } from 'lucide-react'
 
 const Hero = () => {
+  // Scroll functions
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+      element.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      })
+    }
+  }
+
+  const handleSaibaMais = () => {
+    scrollToSection('solution')
+  }
+
+  const handleFaleConosco = () => {
+    scrollToSection('contact')
+  }
+
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-preto-looma to-cinza-grafite overflow-hidden m-0 p-0 block top-0">
       {/* Background Elements - Fixed positioning */}
@@ -81,6 +100,7 @@ const Hero = () => {
               transition={{ delay: 0.8, duration: 0.6 }}
             >
               <motion.button
+                onClick={handleFaleConosco}
                 className="bg-rosa-etico hover:bg-rosa-terra text-white font-semibold px-5 md:px-6 py-2.5 md:py-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl text-sm md:text-base"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -88,6 +108,7 @@ const Hero = () => {
                 Fale com nosso time
               </motion.button>
               <motion.button
+                onClick={handleSaibaMais}
                 className="border-2 border-verde-sustentavel text-verde-sustentavel hover:bg-verde-sustentavel hover:text-preto-looma font-semibold px-5 md:px-6 py-2.5 md:py-3 rounded-full transition-all duration-300 text-sm md:text-base"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
