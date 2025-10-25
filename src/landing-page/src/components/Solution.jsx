@@ -48,7 +48,7 @@ const Solution = () => {
           </h2>
           
           <p className="text-base md:text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
-            Revolucionamos a transparência na indústria têxtil através da combinação única de 
+            Otimizamos e promovemos a transparência na indústria têxtil através da combinação única de 
             tecnologia blockchain avançada e validação automatizada inteligente, criando a 
             plataforma mais confiável para Digital Product Passport.
           </p>
