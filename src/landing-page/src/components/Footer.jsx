@@ -6,6 +6,7 @@ const Footer = () => {
 
   const teamLinks = [
     { name: "Erik Batista", url: "https://www.linkedin.com/in/erik-batista-da-silva-455612215/" },
+    {name: "Joy Pires Franco", url: "https://www.linkedin.com/in/joy-pires-franco-0b973ba1/"},
     { name: "Rafaella Cavalcante", url: "https://www.linkedin.com/in/rafaella-bianca-cavalcante/" },
     { name: "Paula Kim", url: "https://www.linkedin.com/in/paula-kweyeun-kim-b93aab36/" },
     { name: "Yan Coutinho", url: "https://www.linkedin.com/in/yan-m-coutinho/" }
