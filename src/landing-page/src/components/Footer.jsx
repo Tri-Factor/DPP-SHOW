@@ -100,7 +100,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             {/* Copyright */}
             <p className="text-gray-400 text-sm">
-              © {currentYear} Looma by Equipe Baobá. Transformando a moda através da transparência.
+              © {currentYear} Looma, transformando a moda através da transparência.
             </p>
 
             {/* Tech Stack */}
