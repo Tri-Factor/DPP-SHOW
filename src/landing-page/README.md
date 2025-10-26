@@ -84,7 +84,7 @@ npm run preview
 npm run deploy
 ```
 
-## 👥 Equipe Baobá
+## 👥 Equipe Looma
 
 - **[Erik Batista da Silva](https://www.linkedin.com/in/erik-batista-da-silva-455612215/)** - Tech Lead
 - **[Rafaella Cavalcante](https://www.linkedin.com/in/rafaella-bianca-cavalcante/)** - Business Strategy  
@@ -107,7 +107,7 @@ A landing page está configurada para deploy automático no GitHub Pages:
 
 ## 📄 Licença
 
-Este projeto é parte do ecossistema Looma desenvolvido pela Equipe Baobá.
+Este projeto é parte do ecossistema Looma desenvolvido pela Equipe Looma.
 
 ---
 

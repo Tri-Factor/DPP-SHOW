@@ -45,7 +45,7 @@ const Contact = () => {
   // Contact handlers
   const handleEmailContact = () => {
     const subject = "Interesse na Solução Looma DPP"
-    const body = `Olá equipe Baobá,
+    const body = `Olá equipe Looma,
 
 Gostaria de saber mais sobre a solução Looma DPP e como ela pode beneficiar nossa empresa.
 

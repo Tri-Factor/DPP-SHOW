@@ -56,7 +56,7 @@ Este projeto foi otimizado para máxima visibilidade nos mecanismos de busca:
 - **Email**: erikbatista1222@gmail.com
 - **Agendamento**: [Google Calendar](https://calendar.app.google/HEhg7qgMv5Fas3Qu6)
 
-## 👥 Equipe Baobá
+## 👥 Equipe Looma
 
 - **Erik Batista da Silva** - Founder
 - **Rafaella Cavalcante** - Founder  
