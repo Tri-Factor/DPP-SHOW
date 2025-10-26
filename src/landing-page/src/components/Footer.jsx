@@ -14,7 +14,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-gradient-to-b from-preto-looma to-cinza-grafite text-white">
-      <div className="w-full max-w-none px-4 md:px-8 lg:px-16 xl:px-24 py-16">`
+      <div className="w-full max-w-none px-4 md:px-8 lg:px-16 xl:px-24 py-16">
         {/* Main Footer Content */}
         <div className="grid lg:grid-cols-4 gap-12 mb-12">
           {/* Brand Column */}
